@@ -26,8 +26,9 @@
 
 # Day 02
 1. Went through [How to connect to AWS ec2 instance from Ubuntu terminal](https://www.how2shout.com/linux/how-to-connect-to-aws-ec2-instance-from-ubuntu/) blog to connect.
-    > ssh: connect to host 52.31.72.40 port 22: Connection timed out
-    > Will revisit connecting to my instance later today
+2. ssh: connect to host 52.31.72.40 port 22: Connection timed out
+3. Will revisit connecting to my instance later today by going through [I'm receiving "Connection refused" or "Connection timed out" errors when trying to connect to my EC2 instance with SSH. How do I resolve this?
+](https://aws.amazon.com/premiumsupport/knowledge-center/ec2-linux-resolve-ssh-connection-errors/)
 
 
 # Notes on the challenges
