@@ -24,4 +24,10 @@
 3. After reading up on key pairs, I moved on to setting up of my Linux instance. First I read [Amazon EC2 key pairs and Linux instances](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-key-pairs.html)
 4. I'm enjoying the process of reading documentation.[Use EC2 Instance Connect to provide secure SSH access to EC2 instances with private IP addresses](https://aws.amazon.com/blogs/security/use-ec2-instance-connect-to-provide-secure-ssh-access-to-ec2-instances-with-private-ip-addresses/) seems to be a good overview on what is required.
 
+# Day 02
+1. Went through [How to connect to AWS ec2 instance from Ubuntu terminal](https://www.how2shout.com/linux/how-to-connect-to-aws-ec2-instance-from-ubuntu/) blog to connect.
+    > ssh: connect to host 52.31.72.40 port 22: Connection timed out
+    > Will revisit connecting to my instance later today
+
+
 # Notes on the challenges
