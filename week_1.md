@@ -42,6 +42,15 @@
     * **ubuntu@ip-172-31-92-136:~$** indicates I've connected to ubuntuVm via SSH Client
 9. Managed to connect to my instance via SSH client(Terminal) ![Connected to ubuntuVM instance via SSH Client](https://user-images.githubusercontent.com/74470226/194221550-a9a92088-71ae-434e-a203-a8ab83fd105b.png)
 10. Checked my ubuntuVM Instance Status on AWS ![instance status](https://user-images.githubusercontent.com/74470226/194222474-9a67d28b-5b1e-4670-aa3f-2891255d6f0f.png)
+11. How to add welcome message with ```cowsay```
+    * Followed [Cool Custom Welcome Messages on Linux terminal](https://www.geeksforgeeks.org/cool-custom-welcome-messages-linux-terminal/) blog post to implement my welcome message
+    * Started by installing fortune (prints out a random interesting proverb) and cowsay (displays a speaking cow in terminal window) by running ```sudo apt-get install fortune cowsay``` in the terminal
+    * Next, opened the terminal to open the ./bashrc file using any editor of your choice. (Here, vim is used) ``` vim ~/.bashrc ```
+    * Followed by adding a small line at the beginning of ~/.bashrc file, 
+    * Saved the file and exit: Pressed “Esc” to exit this mode. Then typed “:w” to save my script. After that typed :wq to exit Vim
+    * Finally typed ```exit``` to stop my instance then connected to my instance again by running the command in step 7 above
+    * ![cowsay-welcome-message](https://user-images.githubusercontent.com/74470226/194425991-90f4c572-0865-4b6d-b36d-d53dd7675fbf.png)
+
 
 
 # Notes on the challenges
