@@ -30,5 +30,14 @@
 3. Will revisit connecting to my instance later today by going through [I'm receiving "Connection refused" or "Connection timed out" errors when trying to connect to my EC2 instance with SSH. How do I resolve this?
 ](https://aws.amazon.com/premiumsupport/knowledge-center/ec2-linux-resolve-ssh-connection-errors/)
 
+# Day 03
+1. Signed in to AWS with IAM user account.
+2. A while ago, I setup my AWS account with MFA (multi-factor authentication), when I started studying for AWS Cloud Practitioner Exam (few months ago).
+3. 1st Spent some reading the [Best Practices](https://docs.aws.amazon.com/accounts/latest/reference/best-practices.html)
+4. Then stepped through Launching an Instance
+5. Managed to connect to my instance via SSH client(Terminal) ![Connected to ubuntuVM instance via SSH Client](https://user-images.githubusercontent.com/74470226/194221550-a9a92088-71ae-434e-a203-a8ab83fd105b.png) 
+6. To connect from my local PC to my ubuntuVM on AWS, I followed these steps ![image](https://user-images.githubusercontent.com/74470226/194220883-c81a4916-0031-40e3-938b-6e4469ea7c22.png)
+7. ubuntuVM Instance Status ![instance status](https://user-images.githubusercontent.com/74470226/194222474-9a67d28b-5b1e-4670-aa3f-2891255d6f0f.png)
+
 
 # Notes on the challenges
