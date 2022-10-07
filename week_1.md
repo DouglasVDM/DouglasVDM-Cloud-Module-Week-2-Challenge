@@ -51,6 +51,13 @@
     * Finally typed ```exit``` to stop my instance then connected to my instance again by running the command in step 7 above
     * ![cowsay-welcome-message](https://user-images.githubusercontent.com/74470226/194425991-90f4c572-0865-4b6d-b36d-d53dd7675fbf.png)
 
+# Day 04
+1. I couldn't connect to my ubuntu instance ``` ssh -i "ubuntuVM.pem" ubuntu@172.31.92.136 
+ssh: connect to host 172.31.92.136 port 22: Connection timed out ```
+Something about **SSM Agent isn't installed on the instance.**
+2. ![image](https://user-images.githubusercontent.com/74470226/194650896-6f575830-2249-42d6-acf4-348dae1525ed.png)
+3. Working my through [Working with SSM Agent on EC2 instances for Linux](https://docs.aws.amazon.com/systems-manager/latest/userguide/sysman-install-ssm-agent.html)
+4. 
 
 
 # Notes on the challenges
