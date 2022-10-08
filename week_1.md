@@ -57,7 +57,10 @@ ssh: connect to host 172.31.92.136 port 22: Connection timed out ```
 Something about **SSM Agent isn't installed on the instance.**
 2. ![image](https://user-images.githubusercontent.com/74470226/194650896-6f575830-2249-42d6-acf4-348dae1525ed.png)
 3. Working my through [Working with SSM Agent on EC2 instances for Linux](https://docs.aws.amazon.com/systems-manager/latest/userguide/sysman-install-ssm-agent.html)
-4. 
+4. Didn't have time to step through this documentation, I'll try some other time
 
+# Day 05
+1. I need to create a 2nd user with SSH access to my Amazon ubuntuVM instance. [How do I add new user accounts with SSH access to my Amazon EC2 Linux instance?](https://aws.amazon.com/premiumsupport/knowledge-center/new-user-accounts-linux-instance/) looks like a good 1st try documentation to attempt this challenge.
+2. 
 
 # Notes on the challenges
