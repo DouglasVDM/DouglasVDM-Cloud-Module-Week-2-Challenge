@@ -1,21 +1,10 @@
 # Week_2
 
-## 2.) Individual assignment:
-    - Create an ubuntu VM on one of the main cloud providers. 
-        If you have no preference, go with AWS.
-    - Able to access your VM remotely.
-    - Create a 2nd user that can also access the VM with a separate credential.
-    - *Slack message* Berkeli Halmyradov. You should be able to SSH or SFTP to the VM
-    - Use **cowsay** to set a welcome back message for the users every time they log into the server.
-    - Advance: Secure your VM access to from your laptop only.
-    - Advance: Setup anything useful on the server that you can showcase to the class.
+# Notes on the challenges
+    * Internal API is more secure, a bit more complex though (...@Harry Li recommends it, if you can implement it)
+    * There's a lot of examples out there for Free Tier applications, read that up 1st to understand the concept
+    * Do an architectural diagram, it's recommended. Look-up "How to do a diagram" AWS has their own logo's. It's a professional way to present an infrastructure
     
-    ### Important notes:
-    - When setting up your cloud account, make sure you configure the MFA security right away.
-    - AWS - when launching resources, make sure you are have chosen the 'free-tier' ones.
-    - Keep an eye on the billing monitor.
-
-
 # Day 01
 
 1. Started
@@ -32,4 +21,4 @@
 # Day 05
 1. 
 
-# Notes on the challenges
+    
