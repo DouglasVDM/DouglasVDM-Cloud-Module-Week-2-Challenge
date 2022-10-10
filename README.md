@@ -1,5 +1,30 @@
 # DouglasVDM-Cloud-Module-Week-2-Challenge
 
+## Week 2: Basic Networking. 
+
+### Given challenge week 0, add API and a data source. Make it secure. Introduce HTTP(S). Ports, authentication.
+
+   * I hope you are doing well, this task will cut across networking, APIs, ports and 3-Tier App architecture.
+   * Moreover, you’ll need your previous skills in Git, development and general architecture to finish.
+   * We will also visit subnetting and HTTPS by next week. Happy hacking.
+   
+## Task:
+1. Deploy static flask app, 1st API and 2nd API on 3 different EC2 instances - AWS.
+2. Make sure they are all connected and keep security groups to just HTTPS. 
+3. It is recommended to start with API2 → API1 → FlaskApp.
+4. Post URL’s to the 3 instances on the slack channel, in this format:
+   | No. | Item | URL |
+   | - | - | - |
+   | 1 |App |{Your_ec2_IP_app} |
+   | 2 |1st API |{Your_ec2_IP_API1}:5000/ |
+   | 3 |2nd API |{Your_ec2_IP_API2}:5001/worstfood |
+5. Wait for 2 other trainers to approve that they can see it before going to the next objective.
+6. Create a new Virtual Private Cloud (VPC) or make use of an existing one. 
+7. Make sure your app is consuming properly. 
+8. Optional, It should have a CIDR that supports using at least 60,000 hosts.
+9. Post the URLs in the format shown in 3 and see if your 2 API’s can be accessed. 
+10. If you get 2 approval that they can’t access them, proceed to the next objective.
+
 # Notes on the challenges
     * Internal API is more secure, a bit more complex though (...@Harry Li recommends it, if you can implement it)
     * There's a lot of examples out there for Free Tier applications, read that up 1st to understand the concept
