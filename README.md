@@ -9,7 +9,7 @@
    * We will also visit subnetting and HTTPS by next week. Happy hacking.
    
 ## Task:
-1. Deploy static flask app, 1st API and 2nd API on 3 different EC2 instances - AWS.
+1. Deploy static [flask app](https://github.com/DouglasVDM/Cloud-Module-Week-0-Challenge/blob/master/mySteps.md), [1st API](https://github.com/b4ssey/cyf-first-api) and [2nd API](https://github.com/b4ssey/cyf-second-api) on 3 different EC2 instances - AWS.
 2. Make sure they are all connected and keep security groups to just HTTPS. 
 3. It is recommended to start with API2 → API1 → FlaskApp.
 4. Post URL’s to the 3 instances on the slack channel, in this format:
