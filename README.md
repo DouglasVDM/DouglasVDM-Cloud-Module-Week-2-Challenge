@@ -62,17 +62,27 @@
 # Day 05
 1. 
 
-# Day 8
+# Day 08
   1. Working on an ip address that doesn't change when I start up my instance. [Elastic IP addresses
 ](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/elastic-ip-addresses-eip.html)
   2. I'm constantly thinking about not incurring costs on AWS [Tracking your AWS Free Tier usage](https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/tracking-free-tier-usage.html), I discovered that [Elastic IP](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/elastic-ip-addresses-eip.html#eip-pricing) is not part of the Free Tier 
+  
   #### Is Elastic IP free in free tier?
     * An Elastic IP address doesn't incur charges as long as all the following conditions are true: 
       * The Elastic IP address is associated with an EC2  instance. 
       * The instance associated with the Elastic IP address is running. 
       * The instance has only one Elastic IP address attached to it.07 Dec 2021.
+      
+# Day 09
+  1. I found this blog post to [Deploying a Node.js App on an AWS EC2 Instance
+](https://medium.com/@justinpaoletta_dev/deploying-a-node-js-app-on-an-aws-ec2-instance-ee75f1f6630).
+  2. The deployment went well, one issue is that I can't view both Node apps in the browser. 
+  3. Both [first-api](http://ec2-54-197-43-140.compute-1.amazonaws.com:5000/) and [second-api](http://ec2-54-91-101-162.compute-1.amazonaws.com:5001/worstfood) timed out
+  4. Managed to set inbound rules on Security Group for both instances to accept **SSH** on **PORT: 22** and **HTTPS** on **PORT: 443** ![image](https://user-images.githubusercontent.com/74470226/196754752-839bd615-b161-451a-86b8-556e95a7dd5c.png). I'm hoping this inbound rule change will fix the timeout issue
+  5. I stopped both instance so that I can move on to **Flask App instance**
+  6. I stepped through [Creating a Virtual Environment on an AWS EC2 Ubuntu 20.04 Instance](https://python.plainenglish.io/creating-a-virtual-environment-on-an-aws-ec2-ubuntu-20-04-instance-2f47dce1c2a3) to create a Virtual Environment
 
-
+# Day 10
 
 
     
