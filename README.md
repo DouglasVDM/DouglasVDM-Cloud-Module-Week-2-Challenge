@@ -29,6 +29,9 @@
     * Internal API is more secure, a bit more complex though (...@Harry Li recommends it, if you can implement it)
     * There's a lot of examples out there for Free Tier applications, read that up 1st to understand the concept
     * Do an architectural diagram, it's recommended. Look-up "How to do a diagram" AWS has their own logo's. It's a professional way to present an infrastructure
+
+# Todo: 
+  1. I need to look into how to [Set up dynamic DNS on Your Amazon Linux instance] (https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/dynamic-dns.html)
     
 # Day 01
 
@@ -58,6 +61,19 @@
 
 # Day 05
 1. 
+
+# Day 8
+  1. Working on an ip address that doesn't change when I start up my instance. [Elastic IP addresses
+](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/elastic-ip-addresses-eip.html)
+  2. I'm constantly thinking about not incurring costs on AWS [Tracking your AWS Free Tier usage](https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/tracking-free-tier-usage.html), I discovered that [Elastic IP](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/elastic-ip-addresses-eip.html#eip-pricing) is not part of the Free Tier 
+  #### Is Elastic IP free in free tier?
+    * An Elastic IP address doesn't incur charges as long as all the following conditions are true: 
+      * The Elastic IP address is associated with an EC2  instance. 
+      * The instance associated with the Elastic IP address is running. 
+      * The instance has only one Elastic IP address attached to it.07 Dec 2021.
+
+
+
 
     
 
