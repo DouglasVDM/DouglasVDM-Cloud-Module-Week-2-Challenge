@@ -31,7 +31,11 @@
     * Do an architectural diagram, it's recommended. Look-up "How to do a diagram" AWS has their own logo's. It's a professional way to present an infrastructure
 
 # Todo: 
-  1. I need to look into how to [Set up dynamic DNS on Your Amazon Linux instance] (https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/dynamic-dns.html)
+  1. Access Flask App
+  2. Architectural Diagram
+  3. Phase 2
+  4. I need to look into how to [Set up dynamic DNS on Your Amazon Linux instance] (https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/dynamic-dns.html)
+  5. 
     
 # Day 01
 
@@ -83,7 +87,7 @@
   6. I stepped through [Creating a Virtual Environment on an AWS EC2 Ubuntu 20.04 Instance](https://python.plainenglish.io/creating-a-virtual-environment-on-an-aws-ec2-ubuntu-20-04-instance-2f47dce1c2a3) to create a Virtual Environment
 
 # Day 10
-
+  1. I managed to access my node servers by adding a **Custom TCP Inbound Rule** to my **Security Group** to accept web traffic on **PORT: 5001** and **PORT: 5000** respectively.
 
     
 
