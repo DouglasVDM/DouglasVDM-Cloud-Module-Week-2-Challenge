@@ -88,6 +88,7 @@
 
 # Day 10
   1. I managed to access my node servers by adding a **Custom TCP Inbound Rule** to my **Security Group** to accept web traffic on **PORT: 5001** and **PORT: 5000** respectively.
+  2. For connecting API instances to Flask App instance, I'm going to test [How to connect an EC2 linux instance to another Linux instance](https://www.edureka.co/community/51996/how-to-connect-an-ec2-linux-instance-another-linux-instance) blog post. I've read it 2x and it sounds like it may be the solution for my current Todolist item.
 
     
 
