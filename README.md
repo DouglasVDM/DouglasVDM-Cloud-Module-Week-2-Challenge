@@ -90,5 +90,23 @@
   1. I managed to access my node servers by adding a **Custom TCP Inbound Rule** to my **Security Group** to accept web traffic on **PORT: 5001** and **PORT: 5000** respectively.
   2. For connecting API instances to Flask App instance, I'm going to test [How to connect an EC2 linux instance to another Linux instance](https://www.edureka.co/community/51996/how-to-connect-an-ec2-linux-instance-another-linux-instance) blog post. I've read it 2x and it sounds like it may be the solution for my current Todolist item.
 
-    
-
+# Day 11
+  1. On the list for today is the Architectural Diagram and the new Flask app. Before attempting the Architectural diagram, I decided to watch my first **YouTube** video [AWS VPC Beginner to Pro - Virtual Private Cloud Tutorial](https://www.youtube.com/watch?v=g2JOHLHh4rI). Up to this point, I've only been reading **blog posts** and **documentation**. A ***task*** that I've been avioding for the longest time!
+  2. # Amazon VPC Components
+     | VPC Component | What it's used for |
+     | --- | --- |
+     | Virtual Private Cloud (VPC) | A logically isolated virtual network in the AWS cloud |
+     | Subnet | A segment of a VPC's IP address range where you can place groups of isolated resources |
+     | Internet Gateway Egress-Only (outbound) | The Amazon VPC side of a connection to the public Internet using the IPv6 protocol |
+     | Internet Gateway Egress & Ingress (inbound & outbound) | The Amazon VPC side of a connection to the public Internet using the IPv4 protocol |
+     | Router | Routers interconnect subnets and direct reaffic between internet gatewats, vitual private gateways, NAT gateways, and subnets |
+     | Peering Connection | Direct connection between two VPC's |
+     | VPC Endpoints | Private connection to public AWS services |
+     | NAT Instance | Enables Internet access for EC2 instances in private subnets managed by you |
+     | NAT Gateway | Enables Internet access for EC2 instances in private subnets managed by AWS |
+     | Virtual Private Gateway | The Amazon VPC side of a Virtual Private Network (VPN) connection |
+     | Cudtomer Gateway | Customer side of VPN connection |
+     | AES Direct Connect | High speed, high bandwidth, private network connection from customer to aws |
+     | Security Group | Instance-level firewall |
+     | Network ACL | Subnet-level firewall |
+3. 
