@@ -109,4 +109,97 @@
      | AES Direct Connect | High speed, high bandwidth, private network connection from customer to aws |
      | Security Group | Instance-level firewall |
      | Network ACL | Subnet-level firewall |
-3. 
+
+# Day 12
+
+  1. Architectural diagram v0 ![image](https://user-images.githubusercontent.com/74470226/197410848-4bab6d38-23c9-4aee-881d-eb30d5095f14.png)
+  2. The start of setting up VPC, Subnets, Internet Gateway, Security Group, etc.
+  
+### Click create VPC
+* Add a name tag for ease of reference
+* Select: IPv4 CIDR manual input
+* IPv4 CIDR: `10.0.0.0/16`
+* The rest of the settings will remain as per defaults
+* Select: No IPv6 CIDR block
+* Tenancy Info: Default
+> Click Create VPC
+
+### Create a Public Subnet
+* Click `Subnets` in the left menu -> click `Create Subnet` button
+* Select the `VPC` created in the previous step
+* Choose availability Zone `us-east-1a`
+* IPv4 CIDR block Info `10.0.1.0/24`
+* Click `Create Subnet`
+
+### Create a Private Subnet
+* Click `Subnets` in the left menu -> click `Create Subnet` button
+* Select the `VPC` created in the previous step
+* Choose availability Zone `us-east-1b`
+* IPv4 CIDR block Info `10.0.2.0/24`
+* Click `Create Subnet`
+
+### Create a new EC2 Instance on custom VPC
+* Select `existing` key pair or `create` new key pair
+* On new EC2 settings -> `Network settings` Click `Edit` button -> change `VPC` to the custom VPC created in previous step
+* Set `Public IP Address` to `Enable` 
+* Add name tag for security group `public-security group-01`
+* Add rule `HTTPS` from anywhere `0.0.0.0/0`
+* Add rule for SSH
+
+### Create Internet Gateway
+* Click `Internet gateways` in the left menu -> click `Create internet gateway` button
+* Add name tag `my-app-internet-gateway`
+* Click `Create Internet Gateway`
+* Once created, Click the `Actions` button, select `Attach to VPC`
+* Select `Custom VPC`
+* Click `Attach Internet Gateway`
+
+### Create Route Table (Manages where internet traffic goes)
+* Click `Route tables` in the left menu -> click `Create route table` button
+* Add name tag `my-app-public-route-table`
+* Click `Create route table`
+* Once created, Click the `Edit routes` button
+* `Add route` set `Destination` to accept any other address `0.0.0.0/0` that the instance is trying to connect to can be forwarded to the `Internet Gateway` created in the previous step 
+* `Save Changes`
+* Go to `Subnets` to `Public Subnet` -> `Route Table` -> `Edit Route Table Association` -> select `my-app-public-route-table`
+* `Save`
+* 
+* Confirmed the instance is working, I can SSH on my local machine.
+```bash
+Welcome to Ubuntu 22.04.1 LTS (GNU/Linux 5.15.0-1019-aws x86_64)
+
+ * Documentation:  https://help.ubuntu.com
+ * Management:     https://landscape.canonical.com
+ * Support:        https://ubuntu.com/advantage
+
+  System information as of Sun Oct 23 20:51:16 UTC 2022
+
+  System load:  0.35546875        Processes:             102
+  Usage of /:   19.5% of 7.57GB   Users logged in:       0
+  Memory usage: 20%               IPv4 address for eth0: 10.0.1.186
+  Swap usage:   0%
+
+0 updates can be applied immediately.
+
+
+The list of available updates is more than a week old.
+To check for new updates run: sudo apt update
+
+
+The programs included with the Ubuntu system are free software;
+the exact distribution terms for each program are described in the
+individual files in /usr/share/doc/*/copyright.
+
+Ubuntu comes with ABSOLUTELY NO WARRANTY, to the extent permitted by
+applicable law.
+
+To run a command as administrator (user "root"), use "sudo <command>".
+See "man sudo_root" for details.
+
+ubuntu@ip-10-0-*-***:~$
+```
+* 
+
+
+  
+
