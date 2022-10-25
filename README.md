@@ -201,7 +201,8 @@ ubuntu@ip-10-0-*-***:~$
 # Day 13
 
 1. Hopefully, How To Serve Flask Applications with Gunicorn and Nginx on Ubuntu 22.04(https://www.digitalocean.com/community/tutorials/how-to-serve-flask-applications-with-gunicorn-and-nginx-on-ubuntu-22-04), will help me, serve the Flask App and sort out the access via the internet.
-2. 
+2. Found another blog post [Deploy flask app with nginx using gunicorn and supervisor](https://medium.com/ymedialabs-innovation/deploy-flask-app-with-nginx-using-gunicorn-and-supervisor-d7a93aa07c18). This seems to be more aligned to the setup I need
+3. [Deploy Flask The Easy Way With Gunicorn and Nginx!](https://dev.to/brandonwallace/deploy-flask-the-easy-way-with-gunicorn-and-nginx-jgc)
 
 
   
