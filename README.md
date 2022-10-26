@@ -122,7 +122,7 @@
 * The rest of the settings will remain as per defaults
 * Select: No IPv6 CIDR block
 * Tenancy Info: Default
-> Click Create VPC
+* Click `Create VPC` button
 
 ### Create a Public Subnet
 * Click `Subnets` in the left menu -> click `Create Subnet` button
@@ -204,6 +204,10 @@ ubuntu@ip-10-0-*-***:~$
 2. Found another blog post [Deploy flask app with nginx using gunicorn and supervisor](https://medium.com/ymedialabs-innovation/deploy-flask-app-with-nginx-using-gunicorn-and-supervisor-d7a93aa07c18). This seems to be more aligned to the setup I need
 3. [Deploy Flask The Easy Way With Gunicorn and Nginx!](https://dev.to/brandonwallace/deploy-flask-the-easy-way-with-gunicorn-and-nginx-jgc)
 
+# Day 14
 
+1. Previous blog posts didn't get me very far. On to the next blog post [How to deploy your Flask App on AWS EC2 instance with Nginx, Gunicorn
+](https://berkoc.medium.com/how-to-deploy-your-flask-app-to-aws-ec2-instance-with-nginx-gunicorn-b734df606a14). Spent a fair amount of time reading the current post, a few times over. Ready for implementation later. Mainly keeping an eye on AWS Free Tier usage, which is at 89%
+2. 
   
 
