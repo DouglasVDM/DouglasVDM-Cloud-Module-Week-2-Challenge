@@ -208,6 +208,7 @@ ubuntu@ip-10-0-*-***:~$
 
 1. Previous blog posts didn't get me very far. On to the next blog post [How to deploy your Flask App on AWS EC2 instance with Nginx, Gunicorn
 ](https://berkoc.medium.com/how-to-deploy-your-flask-app-to-aws-ec2-instance-with-nginx-gunicorn-b734df606a14). Spent a fair amount of time reading the current post, a few times over. Ready for implementation later. Mainly keeping an eye on AWS Free Tier usage, which is at 89%
-2. 
+2. Finally a blog post that includes screen shots to verify that I'm not missing any steps. [Step-by-step visual guide on deploying a Flask application on AWS EC2](https://medium.com/techfront/step-by-step-visual-guide-on-deploying-a-flask-application-on-aws-ec2-8e3e8b82c4f7) Especially, the step below needs to executed after `deactivate` the `venv`. This is an important oversite on most blog posts. I managed to catch it on the `terminal recording` included in the post.
+3. A `volunteer` spent time with me in a `live session` to debug` why my `Flask App` is `not` accessible on the `internet`. It all came down to `<projectname>.service` file in the `/etc/systemd/system` file
   
 
