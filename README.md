@@ -212,6 +212,16 @@ ubuntu@ip-10-0-*-***:~$
 3. A `volunteer` spent time with me in a `live session` to debug` why my Flask App` is not accessible on the `internet`. It all came down to `<projectname>.service` file in the `/etc/systemd/system` directory
 
 # Day 15
+1. I had all 3 instances running today, with the following error, see entry below
+2.     curl localhost:8000
+       <!doctype html>
+       <html lang=en>
+       <title>500 Internal Server Error</title>
+       <h1>Internal Server Error</h1>
+       <p>The server encountered an internal error and was unable to complete your request. Either the server is overloaded or there is an error in the application.</p>
+3. The image below helped me to visualise Client, Nginx, Gunicorn, Flask App flow
+4. ![image](https://user-images.githubusercontent.com/74470226/198844702-65a179b4-ac97-4778-bddf-5efedb205e4b.png)
+
 
   
 
