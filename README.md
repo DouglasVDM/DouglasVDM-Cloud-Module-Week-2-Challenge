@@ -222,6 +222,26 @@ ubuntu@ip-10-0-*-***:~$
 3. The image below helped me to visualise Client, Nginx, Gunicorn, Flask App flow
 4. ![image](https://user-images.githubusercontent.com/74470226/198844702-65a179b4-ac97-4778-bddf-5efedb205e4b.png)
 
+# Day 16
+1. Thank you to one of the volunteers for pointing me in the right direction. I was trying to solve the "y-problem" when the "x-problem" was not running on my local yet!:bang-head: 
+2. ON LOCAL: Solved the issue. For me it was changing the ports in the api's. I had an error that port 5000 was already in use (ie. the flask app). I then set api 1 to 5001, api 2 to 5002. Started both apis up before staring the flask app
+Going to tackle EC2 instances today (edited![image](https://user-images.githubusercontent.com/74470226/199653762-a90920e8-6f25-4d8e-9ae7-7c08216fbbad.png)
+
+# Day 17
+  
+1.EC2 instance day! I started by checking / setting the `Inbound Rules` on the `APISecurityGroup`. ![image](https://user-images.githubusercontent.com/74470226/199654933-f275cd87-b7fc-4683-87d6-abe1de3fc18f.png)
+
+2. The `First API` consumes the `Second API`. 
+        To achieve this: 
+        * In the `First API`, I changed the `URL` variable to point to `const URL = "http://Second API - Private IPv4 address:PORT"`. Because comms will now take place inside the `VPC` not the over the internet.
+        * ![image](https://user-images.githubusercontent.com/74470226/199655733-97a2a3b3-9bd7-4590-b50f-9351d53aebfd.png)
+        * ![image](https://user-images.githubusercontent.com/74470226/199655902-4befd83d-8d80-467c-8a40-ebd7c932edd1.png)
+        * ![image](https://user-images.githubusercontent.com/74470226/199655975-1ab493c3-4d23-462a-9cc1-86ddec2df515.png)
+  3. It seems as 1st and 2nd API is communicating
+  4. Next step is for `Flask App` to consume both APIs
+ 
+# Day 18
+
 
   
 
